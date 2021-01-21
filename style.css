@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(255, 255, 255);
+}
+
+.myContainer-fluid{
+    display: flex;
+    position: relative;
+}
+
+.myContainer-fluid .sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: rgb(36, 35, 35);
+    padding: 30px 0;
+}
+
+.myContainer-fluid .sidebar h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.myContainer-fluid .sidebar ul li{
+    padding: 15px;
+    padding-left: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225,0.05);
+}
+
+.myContainer-fluid .sidebar ul li a{
+    color: #bdb8d6;
+    display: block;
+}
+
+.myContainer-fluid .sidebar ul li a .fas{
+    width: 25px;
+}
+
+.myContainer-fluid .sidebar ul li:hover{
+    background: #594f8d;
+}
+
+.myContainer-fluid .sidebar ul li:hover a{
+    color: #fff;
+}
+
+.myContainer-fluid .sidebar .social-media{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.myContainer-fluid .sidebar .social-media a{
+    display: block;
+    width: 40px;
+    background: #594f8d;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    margin-bottom: 45px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
